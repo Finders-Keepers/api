@@ -1,5 +1,8 @@
 from flask import Flask
+from flask import request
+from flask import jsonify
 import requests
+import json
 
 app = Flask(__name__)
 
@@ -13,9 +16,20 @@ def index():
 @app.route('/push', methods=['GET', 'POST'])
 def push():
     if request.method == 'POST':
-        print requests.content
+        print request.form
     else:
         pass
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    username = request.form['username']
+    password = request.form['password']
+    ret = {}
+    if username == 'kadajett' and password == 'password':
+        ret['thing'] = 'other thing'
+        return jsonify(**ret)
+    else:
+        abort(401)
 
 @app.route('/track')
 def track():
