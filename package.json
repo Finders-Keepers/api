@@ -1,0 +1,19 @@
+{
+  "name": "finderskeepers-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Finders-Keepers/api.git"
+  },
+  "author": "FindersKeepers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Finders-Keepers/api/issues"
+  },
+  "homepage": "https://github.com/Finders-Keepers/api#readme"
+}
