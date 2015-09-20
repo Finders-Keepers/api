@@ -13,7 +13,7 @@ def index():
 @app.route('/push', methods=['GET', 'POST'])
 def push():
     if request.method == 'POST':
-        pass
+        print requests.content
     else:
         pass
 
